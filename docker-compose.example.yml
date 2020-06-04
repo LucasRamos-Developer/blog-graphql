@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - data_database:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    command: mysqld --sql_mode=""
+    environment:
+      MYSQL_DATABASE: graphql_developemt
+      MYSQL_ROOT_PASSWORD: graphql
+
+volumes:
+  data_database: {}

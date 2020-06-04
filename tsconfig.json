@@ -1,0 +1,16 @@
+ {
+   "compilerOptions": {
+     "lib": [
+       "ESNext"
+     ],
+     "target": "ES6",
+     "module": "CommonJS"
+   },
+   "compileOnSave": false,
+   "include": [
+     "src/**/*.ts"
+   ],
+   "exclude": [
+     "node_modules"
+   ]
+ }
